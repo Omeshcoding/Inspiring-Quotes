@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quote Generator</title>
 
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
-<body>
-    <div class="quote-container" id="quote-container">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Inspiring Quotes</h1>
+      <h4 id="show-modal" class="fav-btn">Favorite</h4>
+      <div class="modal-container" id="modal">
+        <i class="fas fa-times" id="close-modal"></i>
+        <h3>Your Favorite Quotes</h3>
+        <hr />
+        <div class="modal" id="single-quote">
+          <!-- <p id="fav-quote">hello world</p> -->
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <div class="quote-container" id="quote-container">
         <!-- Quote -->
         <div class="quote-text">
-            <i class="fas fa-quote-left"></i>
-            <span id="quote">What you are is what you have been.
-                 What you'll be is what you do now.</span>
+          <i class="fas fa-quote-left"></i>
+          <span id="quote">
+            What you are is what you have been. What you'll be is what you do
+            now.
+          </span>
         </div>
         <!-- Author -->
         <div class="quote-author">
-            <span id="author">- Buddha</span>
+          <span id="author">- Buddha</span>
         </div>
         <!-- Buttons -->
         <div class="button-container">
-            <button class="twitter-button" id="twitter" title="Tweet This">
+          <button class="twitter-button" id="twitter" title="Tweet This">
             <i class="fab fa-twitter"></i>
-            <button id="new-quote">New Quote</button>
-            </button>
+          </button>
+          <button type="submit" id="save">Save</button>
+          <button id="new-quote">New Quote</button>
         </div>
-    </div>
-    <div id="loader"></div>
+      </div>
+
+      <div id="loader"></div>
+    </main>
+    <footer>
+      <h4>built by - <a href=""> Umesh Sharma</a></h4>
+    </footer>
     <!-- JavaScript -->
     <script src="quote.js"></script>
-    <script src="index.js"></script>
-</body>
+    <!-- <script src="index.js"></script> -->
+    <script src="script.js"></script>
+  </body>
 </html>
