@@ -90,7 +90,21 @@ function fetchQuotes() {
   addToFavrouites();
 }
 fetchQuotes();
-
+// Delete Quote
+function deleteQuote(index) {
+  savedQuotes = [];
+  // for (let i = 0; i < savedQuotes.length; i++) {
+  //   console.log(savedQuotes[i] === index);
+  // }
+  // savedQuotes.map((quote, index) => {
+  //   // quote.map((singleQuote) => {
+  //   // });
+  //   // console.log(typeof quote);
+  //   // if (index === i) {
+  //   //   savedQuotes.splice(i, 1);
+  //   // }
+  // });
+}
 // Saved Quotes
 function saveQuote() {
   const currentQuote = quote.textContent;
