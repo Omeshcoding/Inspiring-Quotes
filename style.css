@@ -78,16 +78,50 @@ button:active {
 }
 
 /* Loader */
+
 #loader {
-  border: 16px solid #f3f3f3;
-  /* Light grey */
-  border-top: 16px solid #333;
-  /* Blue */
-  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  transform: translate(-100%, 100%);
+  animation: colorful-npi347md 2s infinite;
+}
+
+@keyframes colorful-npi347md {
+  0% {
+    box-shadow: 56px -56px #477bff, 56px -56px #f2140c, 56px -56px #0000,
+      56px -56px #0000, 56px -56px #0000;
+  }
+
+  25% {
+    box-shadow: 112px -56px #0000, 56px -56px #f2140c, 56px -56px #ffd82e,
+      56px -56px #0000, 56px -56px #0000;
+  }
+
+  50% {
+    box-shadow: 112px -56px #0000, 56px -112px #0000, 56px -56px #ffd82e,
+      56px -56px #3bff81, 56px -56px #0000;
+  }
+
+  75% {
+    box-shadow: 112px -56px #0000, 56px -112px #0000, 0px -56px #0000,
+      56px -56px #3bff81, 56px -56px #477bff;
+  }
+
+  100% {
+    box-shadow: 112px -56px #0000, 56px -112px #0000, 0px -56px #0000,
+      56px 0px #0000, 56px -56px #477bff;
+  }
+}
+/* #loader { */
+/* border: 16px solid #f3f3f3; */
+/* Light grey */
+/* border-top: 16px solid #333; */
+/* Blue */
+/* border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
-}
+} */
 /* Modal */
 .modal-container {
   position: fixed;
