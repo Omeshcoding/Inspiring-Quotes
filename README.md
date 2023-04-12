@@ -1,6 +1,6 @@
 # Motivational-Quote-Generator
 
-### Live Link -[Inspiring Quotes](https://omeshcoding.github.io/Motivational-Quote-Generator/)
+### Live Link -[Inspiring Quotes](https://omeshcoding.github.io/Inspiring-Quotes/)
 
 ## Screeenshot -
 
